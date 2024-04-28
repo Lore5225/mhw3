@@ -1,0 +1,626 @@
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="mhw3.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="MHW3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class = "flag-container">
+          <img id="img-flag" src="images/it.png" alt="" />
+          <img id="img-flag" src="images/en.png" alt="" />
+        </div>
+          <div id = "container-tel">
+          Numero Verde 800 710965 | info@tecnovagroup.com
+        </div>
+      </div>
+      <div class="inner-container">
+        <img src="images/tecnova-group.png" alt="" />
+
+        <div class="flex-lente-container">
+          <img src="images/magnifying-glass.png" alt="" />
+        </div>
+        <div class="flex-menu-telefono">
+          <div id="menu"><div></div></div>
+          <div id="menu"><div></div></div>
+          <div id="menu"><div></div></div>
+        </div>
+      </div>
+      <nav>
+        <a> Home</a>
+        <div class="row-header">
+          <h1>Problemi & Soluzioni</h1>
+          <div class="nav-text hidden">
+            <h2>L'aria che respiri nella tua casa non è salubre?</h2>
+            <h2>Il tuo edificio consuma troppa energia?</h2>
+            <h2>La tua casa è attaccata dall'umidità?</h2>
+            <h2>La tua casa è attaccata da agenti esterni?</h2>
+            <h2>La tua casa ha bisogno di un restyling?</h2>
+          </div>
+        </div>
+        <div class="row-header">
+          <h1>Prodotti</h1>
+          <div class="nav-text hidden">
+            <h2>ClimateCoating</h2>
+            <h2>EnerPaper</h2>
+            <h2>Thermozero</h2>
+            <h2>Genié</h2>
+            <h2>Gemini</h2>
+            <h2>Geniair</h2>
+            <h2>Tecnovair</h2>
+            <h2>SanHabit</h2>
+            <h2>Evercem Protettivi</h2>
+            <h2>Evercem Easy</h2>
+            <h2>Evercem Texture</h2>
+          </div>
+        </div>
+        <a> Referenze</a>
+        <a> Download</a>
+        <a> Blog</a>
+        <a> Superbonus110%</a>
+        <a> Contattaci </a>
+        <a> Lavora con noi</a>
+        <a> <img id="shopping-cart" src="images/carrello.png" alt="" /></a>
+
+        <div class="container-lente-nav">
+          <img class="lente" src="images/magnifying-glass.png" alt="" />
+          <div class="barra-ricerca-container hidden">
+            <form>
+              <input
+                type="text"
+                name="query"
+                class="barra-ricerca"
+                placeholder="Cerca..."
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <div class = "container_grid_modal hidden">
+      <img src="images/close-white.png" alt="" id ="modal-cross">
+      <div id = "grid_modal_search"></div>
+    </div>
+    <div class = "cointainer_tecnova_cover hidden_transition_FadeIn">
+        <img src="images/tecnova_group_cover.jpeg" alt="">
+    </div>
+    <div class="container-slideshow hidden_transition_FadeIn">
+      <img src="images/slideshow.jpg" alt="" />
+    </div>
+    <div class="grid_solution_1x2 hidden_transition_LeftToRight">
+      <div class="solution_item">
+        <strong>Il tuo edificio consuma troppa energia? </strong>
+        <img src="images/Consumi.png" alt="" />
+        <p>
+          Scopri le nostre soluzioni per il
+          <strong>risparmo energetico</strong>, in grado di
+          <strong>ridurre i costi</strong> di <strong>riscaldamento</strong> e
+          <strong>climatizzazione</strong> migliorando
+          <strong>l’efficienza energetica</strong>
+        </p>
+        <div class="cell-findabtmore">
+          <button class="abt-more-button">
+            <img id="plus" src="images/plus.png" alt="" />Scopri di più
+          </button>
+        </div>
+
+        <div class="abt-more-text hidden">
+          Contatta il nostro agente al numero: <strong>33426435 </strong>
+          <a class="close-txt">chiudi</a>
+        </div>
+      </div>
+      <div class="solution_item">
+        <strong>La tua casa è attaccata dall’umidità?</strong>
+        <img src="images/umidita.png" alt="" />
+        <p>
+          Abbiamo le soluzioni per proteggerla sia dall’<strong
+            >umidità di risalita</strong
+          >
+          all’interno dei muri, sia dall’<strong>umidità</strong> che si forma
+          <strong>sulle pareti domestiche</strong>
+        </p>
+        <div class="cell-findabtmore">
+          <button class="abt-more-button">
+            <img id="plus" src="images/plus.png" alt="" />Scopri di più
+          </button>
+        </div>
+
+        <div class="abt-more-text hidden">
+          Contatta il nostro agente al numero: <strong>33426435 </strong>
+          <a class="close-txt">chiudi</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid_solution_1x3 hidden_transition_LeftToRight">
+      <div class="solution_item">
+        <strong>La tua casa è attaccata da agenti esterni?</strong>
+        <img src="images/Agenti_esterni.png" alt="" />
+        <p>
+          Scopri le nostre soluzioni per
+          <strong>proteggerla dal degrado</strong> causato dagli
+          <strong>agenti atmosferici</strong>, tra cui
+          <strong>acqua,freddo e calore solare</strong>
+        </p>
+        <div class="cell-findabtmore">
+          <button class="abt-more-button">
+            <img id="plus" src="images/plus.png" alt="" />Scopri di più
+          </button>
+        </div>
+
+        <div class="abt-more-text hidden">
+          Contatta il nostro agente al numero: <strong>33426435 </strong>
+          <a class="close-txt">chiudi</a>
+        </div>
+      </div>
+
+      <div class="solution_item">
+        <strong>L’aria che respiri nella tua casa non è salubre?</strong>
+        <img src="images/Inquinamento_indoor.png" alt="" />
+        <p>
+          Abbiamo le soluzioni per
+          <strong> eliminare il problema </strong>dell’aria insalubre negli
+          ambienti domestici, <strong> purificarla </strong>e
+          <strong> prenderci cura </strong> del <strong>tuo benessere</strong>
+        </p>
+        <div class="cell-findabtmore">
+          <button class="abt-more-button">
+            <img id="plus" src="images/plus.png" alt="" />Scopri di più
+          </button>
+        </div>
+
+        <div class="abt-more-text hidden">
+          Contatta il nostro agente al numero: <strong>33426435 </strong>
+          <a class="close-txt">chiudi</a>
+        </div>
+      </div>
+
+      <div class="solution_item">
+        <strong>La tua casa ha bisogno di un restyling?</strong>
+        <img src="images/Restyling.png" alt="" />
+        <p>
+          Rendiamo <strong> più bello l’ambiente di casa </strong> attraverso un
+          unico <strong> rivestimento decorativo </strong> per diverse tipologie
+          di <strong> superfici</strong> e <strong> pareti </strong>.
+        </p>
+        <div class="cell-findabtmore">
+          <button class="abt-more-button">
+            <img id="plus" src="images/plus.png" alt="" />Scopri di più
+          </button>
+        </div>
+
+        <div class="abt-more-text hidden">
+          Contatta il nostro agente al numero: <strong>33426435 </strong>
+          <a class="close-txt">chiudi</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container_problem">
+      <div class="problem_item">
+        Qual è il tuo problema?
+        <p>
+          Identifica tra i seguenti il problema che presenta il tuo edificio o
+          l’ambiente in cui vivi e scopri la soluzione che ti proponiamo
+        </p>
+        <div class="tablist">
+          <div class="row-problem">
+            <h3>
+              <img src="images/plus-white.png" alt="" />Umidità da risalita
+            </h3>
+            <div class="solution-text">
+              Al fine di evitare il degrado degli edifici e problematiche alla
+              nostra salute dovute alla conseguente formazione di muffe, diventa
+              necessario intervenire contro l’umidità da risalita con sistemi in
+              grado di bloccarla all’interno delle murature.
+              <div class="learn-about">
+                <img src="images/arrow.png" alt="" /> Scopri come risolvere il
+                problema
+              </div>
+            </div>
+          </div>
+
+          <div class="row-problem">
+            <h3>
+              <img src="images/plus-white.png" alt="" />Umidità e condensa nelle
+              stanze
+            </h3>
+            <div class="solution-text">
+              Un ambiente sano è un ambiente dove non si formano condense e dove
+              quindi si evita la formazione di muffe, il conseguente
+              deterioraramento delle pareti e dove soprattutto si preserva la
+              salute delle persone che lo abitano.
+              <div class="learn-about">
+                <img src="images/arrow.png" alt="" /> Scopri come risolvere il
+                problema
+              </div>
+            </div>
+          </div>
+
+          <div class="row-problem">
+            <h3>
+              <img src="images/plus-white.png" alt="" />Muffa sulle pareti
+            </h3>
+            <div class="solution-text">
+              Il più delle volte, la presenza di muffa sulle pareti è una
+              conseguenza diretta di un ambiente non correttamente aerato, dove
+              la presenza di condensa determina la nascita e il proliferarsi del
+              problema
+              <div class="learn-about">
+                <img src="images/arrow.png" alt="" /> Scopri come risolvere il
+                problema
+              </div>
+            </div>
+          </div>
+
+          <div class="row-problem">
+            <h3>
+              <img src="images/plus-white.png" alt="" />Aria viziata nelle
+              stanze
+            </h3>
+            <div class="solution-text">
+              Abitare un ambiente sano significa garantire la propria salute e
+              quella dei propri cari. Per migliorare il comfort abitativo è
+              necessario proteggere e migliorare anche la qualità dell’aria
+              interna, che spesso è viziata a causa di una insufficiente
+              aerazione
+              <div class="learn-about">
+                <img src="images/arrow.png" alt="" /> Scopri come risolvere il
+                problema
+              </div>
+            </div>
+          </div>
+          <div class="row-problem">
+            <h3>
+              <img src="images/plus-white.png" alt="" />Aria inquinata nelle
+              stanze
+            </h3>
+            <div class="solution-text">
+              L’aria che respiriamo nelle nostre case è inquinata, forse più di
+              quella esterna: le fonti di inquinamento indoor che rilasciano gas
+              o particelle nell’ambiente sono la causa primaria dei problemi di
+              qualità dell’aria nelle abitazioni domestiche e di conseguenza dei
+              danni alla nostra salute
+              <div class="learn-about">
+                <img src="images/arrow.png" alt="" /> Scopri come risolvere il
+                problema
+              </div>
+            </div>
+          </div>
+          <div class="row-problem">
+            <h3>
+              <img src="images/plus-white.png" alt="" />Consumi energetici
+              Elevati
+            </h3>
+            <div class="solution-text">
+              Un fattore chiave per ottenere risparmio energetico è quello
+              dell’efficientamento termico delle pareti in un edificio, il cui
+              raggiungimento permette di risparmiare sui costi di
+              climatizzazione e di riscaldamento, oltre che consentire un
+              maggior comfort ambientale
+              <div class="learn-about">
+                <img src="images/arrow.png" alt="" /> Scopri come risolvere il
+                problema
+              </div>
+            </div>
+          </div>
+          <div class="row-problem">
+            <h3>
+              <img src="images/plus-white.png" alt="" />Degrado delle pareti
+              dell'edificio
+            </h3>
+            <div class="solution-text">
+              Il calcestruzzo non è assolutamente esente da deterioramento
+              causato da agenti atmosferici: sali dell’acqua, acidi, variazioni
+              di temperatura, ecc. esercitano ogni giorno una costante usura
+              delle costruzioni edili e pertanto è necessario ricorrere a
+              trattamenti specifici per mantenerle stabili ed efficienti.
+              <div class="learn-about">
+                <img src="images/arrow.png" alt="" /> Scopri come risolvere il
+                problema
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="problem_item">
+        Case History
+        <p>
+          Scopri quali sono i progettisti che hanno scelto Tecnova Group e dove
+          hanno installato i nostri prodotti per le seguenti soluzioni:
+        </p>
+          <div class="grid-button-history">
+            <div class="button-history">Risparmio Energetico</div>
+            <div class="button-history">Comfort abitativo</div>
+            <div class="button-history">Protezione edifici </div>
+            <div class="button-history">Deumidificazione </div>
+          </div>
+          <img src="images/solution.jpeg" id ="solution-img" alt="">
+      </div>
+    </div>
+      <div class="question-tecnova">Perchè affidarsi a Tecnova Group?</div>
+    <div class="grid-solution hidden_transition_LeftToRight">
+      <div class="grid-solution-item">
+            <strong>Un Unico Interlocutore per tutte le Soluzioni</strong>
+          <img src="images/Unico_referente (1).png" alt="" />
+          <p> 
+            Tecnova Group <strong>non si limita</strong> a offrire
+            <strong>soluzioni</strong>
+            tecnologicamente <strong>innovative</strong> e
+            <strong>moderne</strong>, ma si propone come
+            <strong>unico interlocutore</strong> in grado di prendersi carico di
+            <strong>tutte le attività</strong> che iniziano dal
+            <strong>sopralluogo</strong> e terminano con il servizio
+            <strong>post-vendita</strong>.
+          </p>
+        </div>
+
+      <div class="grid-solution-item">
+              <strong>Innovazione e Condivisione</strong>
+            <img src="images/Innovazione.png" alt="" />
+            <p>
+              Le <strong>scelte tecniche</strong> che Tecnova Group compie ogni
+              giorno rappresentano lo
+              <strong>stato dell’arte</strong> dell’<strong>innovazione</strong>
+              e la <strong>condivisione</strong> di ciò che è stato appreso,
+              attraverso attività di <strong>formazione</strong> e
+              <strong>crescita professionale</strong> dei propri
+              <strong>interlocutori tecnici</strong>.
+            </p>
+        </div>
+
+      <div class="grid-solution-item">
+              <strong>Sostenibilità Ambientale in primo piano</strong>
+            <img src="images/Sostenibile.png" alt="" />
+            <p>
+              Le <strong>risorse del pianeta</strong> non possono essere
+              utilizzate e sfruttate all’infinito: ogni
+              <strong>scelta progettuale </strong>che Tecnova Group compie
+              quotidianamente è rivolta al concetto di
+              <strong>sostenibilità ambientale</strong>, al fine di
+              <strong>rispettare</strong> e
+              <strong>utilizzare</strong> qualsiasi <strong>risorsa</strong> in
+              maniera <strong>oculata</strong>.
+            </p>
+          </div>
+    </div>
+
+      <div class="button-wrap-cell3">
+        <div class="button-cell3">
+          <a>Sfoglia il nostro Company Profile</a>
+        </div>
+    </div>
+
+    <div class="flex-testimonianze">
+      <p>Testimonianze</p>
+    </div>
+
+    <div class="grid-testimonianze">
+      <div class="grid-item-testimonianze">
+        <h1>
+          Marino Saliprandi
+Salsomaggiore Terme (PR)
+        </h1>
+        
+          <img src="images/pers1.jpg" alt="" />
+       
+          <p>
+            Durante la ristrutturazione nel mio immobile ho notato che
+            l’intonaco si scrostava. Era evidente che tale problema si sarebbe
+            potuto ripresentare anche in futuro e pertanto l’architetto che ha
+            seguito la ristrutturazione mi ha messo in contatto con Tecnova
+            Group. Il tecnico che ha effettuato il sopralluogo mi ha proposto
+            l’installazione del prodotto Genié, convincendomi immediatamente con
+            la formula “soddisfatto o rimborsato”. L’installazione è stata
+            semplice, senza la necessità di opere murarie, e i risultati si sono
+            visti dopo breve tempo. Una soluzione efficace che consiglierei a
+            tutti.
+          </p>
+      </div>
+      <div class="grid-item-testimonianze">
+        <h1>
+          Monica Campagnoli Campogalliano (MO)
+        </h1>
+        
+          <img src="images/pers2.jpg" alt="" />
+     
+          
+          <p>
+            Dopo aver ristrutturato la tavernetta della mia villetta singola, mi
+            sono accorta che il muro “fioriva” e che l’aria era diventata
+            insalubre, con un odore persistente di umidità. Ho provato a
+            installare qualche elemento in più ai termosifoni, per permettere un
+            maggior riscaldamento in inverno, ma niente da fare. Ho trovato la
+            soluzione Genié di Tecnova Group su internet e la spiegazione
+            pubblicata sul sito mi ha convinto da subito. Il tecnico che ha
+            fatto il sopralluogo mi ha proposto la formula “soddisfatto o
+            rimborsato” e mi ha garantito che non avrei dovuto fare lavori di
+            muratura. Ho deciso allora di farlo installare e oggi sono
+            soddisfatta: dopo pochi giorni l’umidità è scesa di una ventina di
+            centimetri e non avverto più alcun odore di umidità.
+          </p>
+       
+      </div>
+      <div class="grid-item-testimonianze">
+        <h1>
+          Spiridione Miccoli
+Noicattaro (BA)
+        </h1>
+     
+          <img src="images/pers3.jpg" alt="" />
+      
+        
+          <p>
+            Nella mia villa bifamiliare, situata in campagna, ho notato che
+            l’umidità cominciava a prendere il sopravvento: si scrostavano i
+            muri e le fughe della pavimentazione si presentavano sempre
+            macchiate di umidità. Ho provato a risolvere il problema con delle
+            vaschette contenenti sali e successivamente con un deumidificatore
+            elettrico: niente da fare, il problema persisteva. Ho scoperto il
+            sistema Genié di Tecnova Group grazie alla segnalazione del mio
+            elettricista. Mi sono fidato e sono rimasto molto soddisfatto: lo
+            consiglierei a tutti perché risolve il problema dell’umidità da
+            risalita con una semplice installazione, senza il bisogno di
+            spaccare muri.
+          </p>
+        
+      </div>
+      <div class="grid-item-testimonianze">
+        <h1>
+          Pierluigi Piumi
+Serramazzoni (MO)
+        </h1>
+        
+          <img src="images/pers4.jpg" alt="" />
+       
+        
+          <p>
+            Mi sono accorto che il mio immobile aveva qualche problema quando ho
+            notato uno sfarinamento della vernice alla base delle pareti, con il
+            distacco di porzioni di intonaco e la presenza di efflorescenze. Ho
+            incontrato un tecnico di Tecnova Group nel mio studio e da subito si
+            è contraddistinto per la sua competenza in materia. Il problema era
+            dovuto all’umidità che risaliva nei muri e la soluzione proposta è
+            stata quella di installare Genié, un sistema che genera un campo
+            elettromagnetico in multifrequenza: in poco tempo sono scomparse le
+            efflorescenze e si è fermato il distacco dell’intonaco.
+          </p>
+        
+      </div>
+    </div>
+    <div class="container-certificazioni">
+      <div><p>Le Certificazioni di Tecnova Group</p></div>
+    </div>
+
+    <div class="container-certificazioni">
+      <img src="images/cert1.png" alt="" />
+      <img src="images/cert2.png" alt="" />
+    </div>
+
+    <div class="articles-divider">
+     
+        Approfondisci le tue conoscenze sul comfort abitativo e sulla protezione
+        degli edifici
+     
+      <p>Scopri gli articoli dei nostri esperti nel Blog di Tecnova Group</p>
+    </div>
+
+    <div class="grid-article-container">
+      <div class="articoli-img-container">
+        <img class="cert-img" src="images/art1.jpg" alt="" data-index="0" />
+      </div>
+      <div class="articoli-img-container">
+        <img class="cert-img" src="images/art2.jpg" alt="" data-index="1" />
+      </div>
+      <div class="articoli-img-container">
+        <img class="cert-img" src="images/art3.jpg" alt="" data-index="2" />
+      </div>
+    </div>
+
+    <div class="blog-container">
+      <div class="blog-button">
+        <img src="images/plus.png" alt="" />
+        <p>Vai al blog</p>
+      </div>
+    </div>
+
+    <div class="flex-help">
+      <div class="help">Come possiamo aiutarti?</div>
+    </div>
+
+    <div class="contacts-container">
+      <div class="contacts-item">
+        <div class="container-border">
+          <p>Contattaci su Whatsapp</p>
+          <div class="contacts-button">
+            <img src="images/cornetta.png" alt="" /> Clicca qui
+          </div>
+        </div>
+      </div>
+      <div class="contacts-item">
+        <div class="container-border">
+          <p>Contattaci per ogni esigenza</p>
+          <div class="contacts-button">
+            <img src="images/pngwing.com (1).png" alt="" /> Clicca qui
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-divider">
+      <p>Seguici anche su YouTube!</p>
+    </div>
+
+    <div class="cell-video"></div>
+
+    <div class="container-endpage">
+      <div class="item-endpage">
+        <h3>Tecnova Group</h3>
+        <p>
+          Sede legale e operativa: <br />
+          Via Al Idrisi, 2T 95041 Caltagirone (CT) <br />Tel. 0933 31224/0933
+          25621 <br />Fax: 0933 25621 <br />
+          Email: info@tecnovagroup.com <br />Pec: tecnovagroup@pec.it <br />
+          P.IVA: IT05086260873
+        </p>
+        <div class="enel-img-container">
+          <img src="images/enel.png" alt="" />
+        </div>
+      </div>
+
+      <div class="item-endpage">
+        <div id = "dubai-format">
+            Representative office: 48 Burj Gate, 10th Floor, room #1001,
+            Downtown, Dubai (EAU)
+          </p>
+          <p>
+            Representative office: 7th Floor – CI Tower – khalidiya Area – Abu
+            Dhabi
+          </p>
+          <div class="link-container">
+            <a href="">Lavora con noi</a>
+            <a href="">Privacy e trattamento dei dati</a>
+            <a href="">Uso dei cookie</a>
+          </div>
+        </div>
+      </div>
+      <div class="item-endpage">
+          <p>Iscriviti alla nostra Newsletter</p>
+          <div class="email_bar">E-mail: <input type="text" /></div>
+          <div class="send-button">Invia</div>
+
+          <div class="accept-button-container">
+            <input type="checkbox" name="myCheckbox" id="checkbox" />
+            <h1>Ho letto e accettato l’info sulla privacy</h1>
+          </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>© Copyright Tecnova Group Srl - P.IVA IT05086260873</p>
+        <div>
+          <img src="images/facebook.png" alt="" />
+          <img src="images/pngegg (1).png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
