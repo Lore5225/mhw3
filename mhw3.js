@@ -3,29 +3,26 @@ const documentBody = document.querySelector("body");
 ///////////////////////////////
 
 const observerLeftToRight = new IntersectionObserver((entries) => {
-  entries.forEach((entry) =>{
-    if (entry.isIntersecting){
-      entry.target.classList.add("show_transition_LeftToRight")
-    } 
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show_transition_LeftToRight");
+    }
   });
-})
-const hiddenLeftRigth = document.querySelectorAll(".hidden_transition_LeftToRight")
+});
+const hiddenLeftRigth = document.querySelectorAll(
+  ".hidden_transition_LeftToRight"
+);
 hiddenLeftRigth.forEach((hidden) => observerLeftToRight.observe(hidden));
 
 const observerFadeIn = new IntersectionObserver((entries) => {
-  entries.forEach((entry) =>{
-    if (entry.isIntersecting){
-      entry.target.classList.add("show_transition_FadeIn")
-    } 
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show_transition_FadeIn");
+    }
   });
-})
-const hiddenFadeIn = document.querySelectorAll(".hidden_transition_FadeIn")
+});
+const hiddenFadeIn = document.querySelectorAll(".hidden_transition_FadeIn");
 hiddenFadeIn.forEach((hidden) => observerFadeIn.observe(hidden));
-
-
-
-
-
 
 /////////////////////////////////////////////////////
 const buttons = document.querySelectorAll(".cell-findabtmore");
@@ -110,9 +107,6 @@ for (const tendina of tendine) {
   tendina.addEventListener("mouseenter", menuTendina);
 }
 
-
-
-
 /////////////////////////////////////////////////////
 const barraRicerca = document.querySelector(".container-lente-nav");
 function ricercaLente(event) {
@@ -193,39 +187,36 @@ function onJson(json) {
   }
 }
 
-
 /////////////////////////////////////////////////////
 
 let token;
 const id_client = "313884b8c8754c2db5c6035e4349167f";
 const client_secret = "d7f11c0ce3c046e196aa1834b569fc6d";
-const containerGridModal = document.querySelector(".container_grid_modal")
+const containerGridModal = document.querySelector(".container_grid_modal");
 
-function searchSpotify(event)
-{
+function searchSpotify(event) {
   event.preventDefault();
   const search_bar = document.querySelector(".barra-ricerca");
   const albumName = encodeURIComponent(search_bar.value);
   containerGridModal.classList.remove("hidden");
-  documentBody.classList.add("overflowToggle")
+  documentBody.classList.add("overflowToggle");
   containerGridModal.scrollIntoView();
-  console.log("prova: " +albumName )
-  fetch("https://api.spotify.com/v1/search?type=album&q=" + albumName,
-  {
-    headers:
-    {
-      'Authorization' : 'Bearer ' + token
-    }
-  }
-).then(onResponseSpotify).then(onJsonSpotify);
+  console.log("prova: " + albumName);
+  fetch("https://api.spotify.com/v1/search?type=album&q=" + albumName, {
+    headers: {
+      Authorization: "Bearer " + token,
+    },
+  })
+    .then(onResponseSpotify)
+    .then(onJsonSpotify);
 }
 const formSpotify = document.querySelector("form");
-formSpotify.addEventListener("submit", searchSpotify)
+formSpotify.addEventListener("submit", searchSpotify);
 
-const closeButton = document.querySelector("#modal-cross")
-function closeModal(){
+const closeButton = document.querySelector("#modal-cross");
+function closeModal() {
   containerGridModal.classList.add("hidden");
-  documentBody.classList.remove("overflowToggle")
+  documentBody.classList.remove("overflowToggle");
 }
 closeButton.addEventListener("click", closeModal);
 
@@ -233,22 +224,22 @@ function onResponseSpotify(response) {
   return response.json();
 }
 
-function onJsonSpotify(json){
-  console.log(json)
+function onJsonSpotify(json) {
+  console.log(json);
   const ResultsItemContainer = document.querySelector("#grid_modal_search");
   const resultsAlbum = json.albums.items;
-  ResultsItemContainer.innerHTML = '';
+  ResultsItemContainer.innerHTML = "";
 
-  for(let i = 0; i <resultsAlbum.length; i++)
-  {
+  for (let i = 0; i < resultsAlbum.length; i++) {
     const album_data = resultsAlbum[i];
     const album_image_src = album_data.images[1].url;
     const album_titolo = album_data.name;
 
-    const resultItem = document.createElement("div")
-    resultItem.classList.add("resultItem")
-    
+    const resultItem = document.createElement("div");
+    resultItem.classList.add("resultItem");
+
     const album_image = document.createElement("img");
+
     album_image.src = album_image_src;
 
     const container_title = document.createElement("h1");
@@ -261,17 +252,16 @@ function onJsonSpotify(json){
     ResultsItemContainer.appendChild(resultItem);
   }
 }
-fetch("https://accounts.spotify.com/api/token",
-	{
-   method: "post",
-   body: 'grant_type=client_credentials',
-   headers:
-   {
-    'Content-Type': 'application/x-www-form-urlencoded',
-    'Authorization': 'Basic ' + btoa(id_client + ':' + client_secret)
-   }
-  }
-).then(onTokenResponse).then(onTokenJson);
+fetch("https://accounts.spotify.com/api/token", {
+  method: "post",
+  body: "grant_type=client_credentials",
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded",
+    Authorization: "Basic " + btoa(id_client + ":" + client_secret),
+  },
+})
+  .then(onTokenResponse)
+  .then(onTokenJson);
 
 function onTokenJson(json) {
   console.log(json);

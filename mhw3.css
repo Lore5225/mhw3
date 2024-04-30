@@ -188,13 +188,13 @@ nav a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.overflowToggle{
+.overflowToggle {
   overflow: hidden;
 }
 
-#modal-cross{
+#modal-cross {
   width: 75px;
-  cursor:pointer;
+  cursor: pointer;
   padding: 20px;
 }
 
@@ -202,8 +202,8 @@ nav a {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  overflow-y:auto;
+  overflow-y: auto;
+  gap: 20px;
   max-height: 75vh;
 }
 
@@ -214,6 +214,10 @@ nav a {
 
 .resultItem {
   padding: 20px;
+}
+
+.resultItem img {
+  width: 100%;
 }
 
 .inner-lente {
